@@ -87,10 +87,9 @@ margin: .7rem 0 ;
 box-shadow: var(--box-shadow);
 }
 i{
-    font-size:5rem;
+    font-size:4rem;
     color: var(--primary);
     pointer-events: none;
-    
 }
 .header-content{
     display: grid;
@@ -296,7 +295,97 @@ i{
     opacity: 1;
     transform: scale(1);
 }
-/*service container */
+/*service container end */
+
+
+/*contact container start */
+.contact-container .h-shape {
+    transition: all .4s ease-in-out;
+    width: 25%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #bd16169d);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.contact-content{
+    display: flex;
+    padding-top: 3.5rem;
+    width: 80%;
+}
+
+.left-contact{
+flex: 3; 
+
+}
+.left-contact h4 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.left-contact p{
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+.contact-info .contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info .contact-item p{
+    margin: .6rem 0 !important ;
+    padding: 0 !important ;
+}
+
+.contact-info .contact-item .icon{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    background-color: transparent;
+}
+
+.contact-info .contact-item .icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.right-contact{
+    flex: 3;
+    margin-left: 10rem;
+}
+
+.right-contact .input-control{
+    margin: 1.5rem 0;
+
+}
+
+.right-contact .input-control input, textarea{
+    border-radius: 30px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        padding: .8rem 1.1rem;
+        outline: none;
+        border: none;
+        background-color:var(--bg-color);
+        width: 100%;
+        color: var(--white);
+        resize: none;
+    }
+
+    .i-c-2{
+        display: flex;
+    }
+
+    .i-c-2 :last-child {
+        margin-left: 1.5rem;
+    }
+
 
 
 
@@ -367,6 +456,7 @@ text-align: center;
 @media  screen and (max-width : 600px) {
     header{
         padding: 0;
+        height: 100%;
     }
     header .right-header{
     padding: 2rem !important;
@@ -389,9 +479,6 @@ text-align: center;
             width: 90%;
         }
         
-.about{
-    z-index: -1;
-}
         .about-container{
            grid-template-columns: 1fr;
         }
@@ -418,7 +505,8 @@ text-align: center;
     grid-template-columns: 1fr;
     width: 100%;
 }
-.services-items{
+.contact{
+    grid-template-columns: 1fr;
    
 }
 }
