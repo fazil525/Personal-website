@@ -392,8 +392,24 @@ flex: 3;
     .i-c-2 :last-child {
         margin-left: 1.5rem;
     }
+.submit-btn{
+ border-radius: 30px;
+color: var(--primary);
+background-color: var(--bg-color);
+border: 1px solid var(--border);
+width: 150px;
+height: 50px;
+margin: 0 auto;
+padding: 0;
+display: inline-block;
+line-height: 50px;
+text-align: center;
 
-
+}
+.contact-icons{
+    margin: 5rem auto;
+    display: inline-block;
+}
 
 
 
@@ -529,7 +545,5 @@ text-align: center;
    font-family:inherit;
    font-size: inherit;
    font-weight: inherit;
-
-   
 }
 }
