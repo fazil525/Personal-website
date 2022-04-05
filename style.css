@@ -535,7 +535,8 @@ text-align: center;
     flex-direction: column; 
 }
 .contact-content .right-contact{
-   
+   left: 50%;
+   right: 50%;
     margin-top: 2.5rem;
     width: 100%;
 }
